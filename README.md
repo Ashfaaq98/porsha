@@ -48,7 +48,7 @@ It is highly recommended to use a Python virtual environment.
 
 1.  **Clone the Repository (or download the source code):**
     ```bash
-    git clone [https://github.com/ashfaaq98/porsha.git](https://github.com/ashfaaq98/porsha.git) 
+    git clone https://github.com/ashfaaq98/porsha.git
     cd porsha
     ```
 
@@ -58,12 +58,7 @@ It is highly recommended to use a Python virtual environment.
     python -m venv myenv
     # Activate (Linux/macOS)
     source myenv/bin/activate
-    # Activate (Windows CMD)
-    # myenv\Scripts\activate.bat
-    # Activate (Windows PowerShell - might need policy adjustment)
-    # myenv\Scripts\Activate.ps1
     ```
-    Your terminal prompt should now start with `(myenv)`.
 
 3.  **Install Dependencies:**
     ```bash
