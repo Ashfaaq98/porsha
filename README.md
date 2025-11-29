@@ -48,7 +48,7 @@ It is highly recommended to use a Python virtual environment.
 
 1.  **Clone the Repository (or download the source code):**
     ```bash
-    git clone [https://github.com/yourusername/porsha.git](https://github.com/yourusername/porsha.git) 
+    git clone [https://github.com/ashfaaq98/porsha.git](https://github.com/ashfaaq98/porsha.git) 
     cd porsha
     ```
 
@@ -95,12 +95,6 @@ This toolkit relies on the following core libraries:
 * [Scapy](https://scapy.net/): Network Packet Manipulation and Analysis
 * [Hachoir](https://hachoir.readthedocs.io/): File Metadata Extraction
 
-## Architecture Overview
-
-* **GUI (`gui/`):** Contains PyQt6 widgets defining the main window (`main_window.py`) and individual tabs (`disk_tab.py`, `network_tab.py`, `utility_tab.py`). Also includes worker objects (`worker.py`) for background tasks.
-* **Tools (`tools/`):** Contains the backend Python modules that perform the actual forensic logic using the libraries listed above (`disk_analysis.py`, `network_analysis.py`, `calculate_hash.py`, `extract_metadata.py`).
-* **Threading:** Uses `QThread` and worker objects (`gui/worker.py`) to run analysis tasks in the background, ensuring the GUI remains responsive. Communication between threads and the GUI uses Qt's signal and slot mechanism.
-* **Entry Point (`run.py`):** Initializes the application, sets up logging, creates the main window, and starts the Qt event loop.
 
 ## License
 
